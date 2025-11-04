@@ -1,0 +1,80 @@
+/* 
+  ───────────────────────────────────────────────
+  🎨 HEX COLOR GUIDE (for customizing colors)
+  ───────────────────────────────────────────────
+  Light Cream: #fdf6f0      → background
+  Deep Purple: #6c5ce7      → header, hover
+  Soft Lavender: #a29bfe    → sidebar
+  Light Gray: #dfe6e9       → footer
+  Dark Gray: #333           → text
+  White: #ffffff            → text on dark backgrounds
+*/
+
+/* Reset and base layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top header bar */
+header {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  padding: 2rem;
+  margin-right: 200px; /* Leaves space for right nav */
+}
+
+/* Right-side vertical navigation */
+nav {
+  width: 200px;
+  background-color: #a29bfe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+nav h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #6c5ce7;
+}
+
+/* Footer at bottom */
+footer {
+  background-color: #dfe6e9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
